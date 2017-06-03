@@ -1,0 +1,7 @@
+<svg [ngStyle]="{width:width, height:height}">
+  <g [attr.transform]="trans">
+    <g class="arc" *ngFor="let g of groups">
+      <path [attr.d]="g.d" [attr.fill]="g.color" [attr.stroke]= "g.stroke" [attr.strokeWidth]= "g.strokeWidth"></path>
+      <text [attr.transform]="g.textTrans" dy="0.35em">{{g.text}}</text></g>
+  </g>
+</svg>

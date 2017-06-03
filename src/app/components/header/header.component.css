@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    background: orange;
+    padding: 30px 20px;
+}
+
+.header .logo h1 {
+    margin: 3px 0;
+}
+
+.header .logo .subtitle {
+    font-size: 0.8rem;
+}
+
+.header .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .actions button {
+}

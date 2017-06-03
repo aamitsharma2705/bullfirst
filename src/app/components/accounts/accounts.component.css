@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.left-section .header {
+    display: flex;
+    height: 30px;
+}
+
+.left-section .header button {
+    height: 25px;
+}
+.left-section .header > .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Right Section */
+.right-section {
+    width: 300px;
+    background: #ccc;
+}
+
+.right-section .help-label {
+    padding: 10px;
+}

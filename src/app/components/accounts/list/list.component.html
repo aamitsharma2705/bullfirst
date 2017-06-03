@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Market Value</th>
+    <th>Cash</th>
+    <th>Legend</th>
+  </tr>
+
+  <tr class="row" *ngFor="let acc of accounts; let i = index"
+    (click)="onSelected(i)"
+  >
+    <td>{{acc.name}}</td>
+    <td>{{acc.marketValue}}</td>
+    <td>{{acc.cash}}</td>
+    <td>
+      <div class="legend" [ngStyle]="{backgroundColor: acc.legend}"></div>
+    </td>
+  </tr>
+</table>

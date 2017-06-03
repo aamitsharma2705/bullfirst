@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+}
+table th {
+    background: #ccc;
+    padding: 5px;
+}
+table tr {
+    cursor: pointer;
+}
+table td {
+    padding: 5px;
+}
+
+.legend {
+    width: 30px;
+    height: 16px;
+}

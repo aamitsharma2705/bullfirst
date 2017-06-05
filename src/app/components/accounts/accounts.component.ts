@@ -6,7 +6,11 @@ import { AccountService } from '../../services/account.service';
 @Component({
   selector: 'app-accounts',
   templateUrl: './accounts.component.html',
-  styleUrls: ['./accounts.component.css'],
+  styles: [`.actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}`],
   providers: [AccountService]
 })
 export class AccountsComponent implements OnInit {

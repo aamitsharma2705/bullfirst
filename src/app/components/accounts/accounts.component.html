@@ -1,17 +1,23 @@
-<div class="content">
-  <div class="left-section">
-  <div class="header">
-    <strong>Accounts</strong>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8" style="display: flex; padding: 30px;">  
+      <div>
+        <h4>Accounts</h4>
+      </div>
 
-    <div class="actions">
-        <button (click)="addAccount()">Add Account</button>
-        <button>Refresh</button>
+      <div class="actions">
+          <button class="btn btn-default" (click)="addAccount()">Add Account</button>
+          <button class="btn btn-default">Refresh</button>
+      </div>
     </div>
-    </div>
-    <app-list [accounts]="accounts" (rowSelected)="onRowSelection($event)"></app-list>
+
   </div>
-  <div class="right-section">
-      <app-chart [width]="300" [height]="300" [data]="accounts" [valProp]="'cash'" [colorProp]="'legend'" [selectedIndex]= "selectedAccountIndex"></app-chart>
-      <div class="help-label">Click on an account to view positions</div>
+  <div class="row">
+    <div class="col-md-8">
+      <app-list [accounts]="accounts" (rowSelected)="onRowSelection($event)"></app-list>
+    </div>
+    <div class="col-md-4" style="padding-top: 10px">
+        <app-chart [width]="300" [height]="300" [data]="accounts" [valProp]="'cash'" [colorProp]="'legend'" [selectedIndex]= "selectedAccountIndex"></app-chart>
+    </div>
   </div>
 </div>

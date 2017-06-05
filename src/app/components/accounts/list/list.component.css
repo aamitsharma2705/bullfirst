@@ -1,18 +1,30 @@
-table {
-    width: 100%;
-}
-table th {
-    background: #ccc;
-    padding: 5px;
-}
 table tr {
     cursor: pointer;
 }
-table td {
-    padding: 5px;
-}
 
 .legend {
-    width: 30px;
-    height: 16px;
+    display: inline-block;
+    width:30%;
+    color:transparent;
+    font-size: 8px;
+}
+.table-fixed {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.table-fixed tbody {
+  height: 300px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td {
+  float: left;
+}
+.table-fixed thead tr th {
+  float: left;
+  background-color: #f39c12;
+  border-color: #e67e22;
 }

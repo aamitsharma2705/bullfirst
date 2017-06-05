@@ -98,7 +98,6 @@ This will also create test coverage for the app
  `npm run lint`
 
 **Note**: 
-* Routing implementaion is still left which can allow us to implement better interaction for different screens
 * For async we can also include Reactive programing using [RxJs](https://github.com/Reactive-Extensions/RxJS)
 * We can also improve more on data side by using single store using [Redux](http://redux.js.org/) which is a state container for Javascript apps and provide 
     uniform data flow.
